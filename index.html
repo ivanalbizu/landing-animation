@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demo Landing build with CSS grid. Animations with CSS and Javascript."></head>
+  <title>Landing grid molona</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <script src="./src/js/script.js" defer></script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-wrapper" data-animate="nav-wrapper">
+      <a class="nav__logo" href="#!" data-animate="split-word">Super company</a>
+      <ul class="nav__menu animate-nav__menu">
+        <li>
+          <a class="nav__menu-item nav__menu-item--active" href="#!">What</a>
+        </li>
+        <li>
+          <a class="nav__menu-item" href="#!">How</a>
+        </li>
+        <li>
+          <a class="nav__menu-item" href="#!">About</a>
+        </li>
+        <li>
+          <a class="nav__menu-item" href="#!">Contact</a>
+        </li>
+        <li>
+          <button class="btn-signin" type="button">Sign in</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main class="main">
+    <div class="wrapper-purple">
+      <section class="purple">
+        <div class="purple__bg" data-animate="purple__bg"></div>
+        <figure class="purple__img shadow" data-animate="purple__img">
+          <img src="./src/img/purple__img2.png" alt="">
+        </figure>
+        <article class="purple__txt" data-animate="purple__txt">
+          <h1 class="purple-title">Lorem ipsum dolor sit.</h1>
+          <p class="purple-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tempore corporis optio vitae nihil amet repellendus asperiores ipsam doloribus possimus.</p>
+          <form>
+            <div class="btn-subscribe">
+              <label class="label" data-animate="label">
+                <input type="text" class="text" placeholder="Your email">
+                <span class="placeholder">Your email</span>
+              </label>
+              <button type="submit" class="submit" data-animate="submit">subscribe</button>
+            </div>
+          </form>
+        </article>
+      </section>
+    </div>
+
+    <div class="wrapper-green" data-content-visibility="false" style="--intrinsic-size:1px 700px;">
+      <section class="green">
+        <article class="green__txt" data-animate="green__txt">
+          <h2 class="green-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+          <p class="green-subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, alias.</p>
+          <form>
+            <button type="button" class="btn-register">register</button>
+          </form>
+        </article>
+        <div class="green__bg" data-animate="green__bg"></div>
+        <figure class="green__img-left shadow" data-animate="green__img-left">
+          <img src="./src/img/green__img-01-a.jpg" alt="">
+        </figure>
+        <figure class="green__img-right shadow" data-animate="green__img-right">
+          <img src="./src/img/green__img-02-b.jpg" alt="">
+        </figure>
+      </section>
+    </div>
+
+    <div class="blue">
+      <header class="blue__header">
+        <h3 class="blue-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, repellendus.</h3>
+      </header>
+      <div class="wrapper-blue wrapper-blue--top">
+        <div class="blue__content">
+          <div class="blue__content-left">
+            <p class="blue-subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="counter">
+              <div class="counter__minute"><span></span></div>
+              <div class="counter__separator">:</div>
+              <div class="counter__second"><span></span></div>
+            </div>
+          </div>
+          <div class="blue__content-right">
+            <figure class="blue__img-top" data-animate="blue__img-top">
+              <img src="./src/img/linternas.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-blue wrapper-blue--bottom">
+        <div class="blue__content">
+          <div class="blue__content-left">
+            <ul class="list" data-animate="list">
+              <li class="list-item">
+                <span class="list__title">First item Lorem ipsum dolor sit.</span>
+                <span class="list__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem blanditiis necessitatibus earum.</span>
+              </li>
+              <li class="list-item">
+                <span class="list__title">Second item Lorem ipsum dolor sit more than one.</span>
+                <span class="list__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem blanditiis necessitatibus earum.</span>
+              </li>
+              <li class="list-item">
+                <span class="list__title">Third item Lorem ipsum dolor.</span>
+                <span class="list__subtitle">Lorem ipsum dolor sit amet. Rem blanditiis necessitatibus earum.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="blue__content-right">
+            <figure class="blue__img-bottom shadow-light">
+              <img src="./src/img/spider.png" data-animate="filter" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div>This is a footer content</div>
+  </footer>
+</body>
+</html>
