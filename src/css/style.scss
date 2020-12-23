@@ -2,12 +2,10 @@
   box-sizing: border-box;
   margin: 0;
 }
-
 html,
 body {
   height: 100%;
 }
-
 body {
   font-family: 'Montserrat', sans-serif;
   color: #242424;
@@ -56,8 +54,7 @@ input[type="submit"], button {
   color: transparent;
 }
 :root {
-  --width-outer-content: 86.252em;//+2 padding
-  //--width-inner-content: 1170px;
+  --width-content: 86.252em;//+2em padding
   --color-purple: #70163C;
   --color-purple-light: #9C2A5A;
   --color-purple-dark: #2E0F15;
@@ -121,7 +118,7 @@ input[type="submit"], button {
   background-color: var(--color-purple);
   &-wrapper {
     width: 100%;
-    max-width: var(--width-outer-content);
+    max-width: var(--width-content);
     padding-left: 1em;
     padding-right: 1em;
     margin: auto;
@@ -161,7 +158,6 @@ input[type="submit"], button {
       padding: 1.5em 0;
       margin: auto 1em;
       &:hover,
-      &:focus,
       &--active {
         border-bottom: 3px solid #fff;
       }
@@ -190,7 +186,7 @@ input[type="submit"], button {
 }
 .purple {
   width: 100%;
-  max-width: var(--width-outer-content);
+  max-width: var(--width-content);
   padding: var(--grid) 1em 0;
   margin: auto;
   display: grid;
@@ -226,7 +222,7 @@ input[type="submit"], button {
 
 .green {
   width: 100%;
-  max-width: var(--width-outer-content);
+  max-width: var(--width-content);
   padding: var(--grid) 1em;
   margin: auto;
   display: grid;
@@ -263,7 +259,7 @@ input[type="submit"], button {
   &__header {
     display: flex;
     justify-content: space-between;
-    width: var(--width-outer-content);
+    width: var(--width-content);
     max-width: 100%;
     padding: 0 1em;
     margin: auto;
@@ -273,7 +269,7 @@ input[type="submit"], button {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: var(--width-outer-content);
+    width: var(--width-content);
     max-width: 100%;
     padding: 0 1em 0;
     margin: auto;
@@ -295,7 +291,6 @@ input[type="submit"], button {
     padding-top: 3em;
   }
 }
-
 .footer {
   height: 400px;
   background-color: var(--color-blue);
@@ -312,6 +307,7 @@ input[type="submit"], button {
   }
 }
 
+// typos
 .purple-title {
   color: #fff;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -329,7 +325,6 @@ input[type="submit"], button {
   line-height: 1.4;
   margin-bottom: clamp(2em, 2vw, 3em);
 }
-
 .green-title {
   color: #242424;
   font-family: 'Open Sans Condensed', sans-serif;
@@ -347,7 +342,6 @@ input[type="submit"], button {
   line-height: 1.2;
   margin-bottom: clamp(2em, 2vw, 2.5em);
 }
-
 .blue-title {
   color: var(--color-blue);
   font-family: 'Open Sans Condensed', sans-serif;
@@ -501,15 +495,13 @@ input[type="submit"], button {
     flex-wrap: wrap;
     background: var(--color-purple);
     padding-top: 2em;
-    padding-bottom: 40px;
+    padding-bottom: 2.5em;
     position: relative;
     &__bg {
       width: calc(100% - 2em);
-      //height: 90vh;
       height: 55%;
       position: absolute;
       top: 0;
-      //clip-path: polygon(0 30%, 100% 50%, 100% 80%, 0% 80%);
     }
     &__img {
       img {
@@ -604,6 +596,7 @@ input[type="submit"], button {
   }
 }
 
+// counter css
 .counter {
   font-size: 3em;
   font-family: 'Open Sans Condensed';
@@ -655,19 +648,20 @@ input[type="submit"], button {
   }
 }
 
-.counter__second span::before {
-  counter-reset: second-unit-of-tens 5;
-  content: counter(second-unit-of-tens);
-  animation-duration: 60s;
-  animation-name: counter-second-unit-of-tens;
+.counter__second span {
+  &::before {
+    counter-reset: second-unit-of-tens 5;
+    content: counter(second-unit-of-tens);
+    animation-duration: 60s;
+    animation-name: counter-second-unit-of-tens;
+  }
+  &::after {
+    counter-reset: second-unit 9;
+    content: counter(second-unit);
+    animation-duration: 10s;
+    animation-name: counter-second-unit;
+  }
 }
-.counter__second span::after {
-  counter-reset: second-unit 9;
-  content: counter(second-unit);
-  animation-duration: 10s;
-  animation-name: counter-second-unit;
-}
-
 @keyframes counter-second-unit {
   10%  { counter-increment: second-unit -1; }
   20%  { counter-increment: second-unit -2; }
@@ -689,25 +683,19 @@ input[type="submit"], button {
   100%   { counter-reset: second-unit-of-tens 0; }
 }
 
-
-
-.counter__minute span::before,
-.counter__minute span::after {
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: step-end;
-}
-.counter__minute span::before {
-  counter-reset: minute-unit-of-tens 5;
-  content: counter(minute-unit-of-tens);
-  animation-duration: 3600s;
-  animation-name: counter-minute-unit-of-tens;
-}
-.counter__minute span::after {
-  counter-reset: minute-unit 9;
-  content: counter(minute-unit);
-  animation-duration: 600s;
-  animation-name: counter-minute-unit;
+.counter__minute span {
+  &::before {
+    counter-reset: minute-unit-of-tens 5;
+    content: counter(minute-unit-of-tens);
+    animation-duration: 3600s;
+    animation-name: counter-minute-unit-of-tens;
+  }
+  &::after {
+    counter-reset: minute-unit 9;
+    content: counter(minute-unit);
+    animation-duration: 600s;
+    animation-name: counter-minute-unit;
+  }
 }
 @keyframes counter-minute-unit {
   10%  { counter-increment: minute-unit -1; }
@@ -874,7 +862,6 @@ input[type="submit"], button {
     transition: opacity 1s linear 2.3s;
   }
 }
-
 
 
 // KEYFRAMES

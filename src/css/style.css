@@ -65,7 +65,7 @@ input[type="submit"], button {
 }
 
 :root {
-  --width-outer-content: 86.252em;
+  --width-content: 86.252em;
   --color-purple: #70163C;
   --color-purple-light: #9C2A5A;
   --color-purple-dark: #2E0F15;
@@ -139,7 +139,7 @@ input[type="submit"], button {
 
 .nav-wrapper {
   width: 100%;
-  max-width: var(--width-outer-content);
+  max-width: var(--width-content);
   padding-left: 1em;
   padding-right: 1em;
   margin: auto;
@@ -185,7 +185,7 @@ input[type="submit"], button {
   margin: auto 1em;
 }
 
-.nav__menu-item:hover, .nav__menu-item:focus, .nav__menu-item--active {
+.nav__menu-item:hover, .nav__menu-item--active {
   border-bottom: 3px solid #fff;
 }
 
@@ -214,7 +214,7 @@ input[type="submit"], button {
 
 .purple {
   width: 100%;
-  max-width: var(--width-outer-content);
+  max-width: var(--width-content);
   padding: var(--grid) 1em 0;
   margin: auto;
   display: grid;
@@ -254,7 +254,7 @@ input[type="submit"], button {
 
 .green {
   width: 100%;
-  max-width: var(--width-outer-content);
+  max-width: var(--width-content);
   padding: var(--grid) 1em;
   margin: auto;
   display: grid;
@@ -300,7 +300,7 @@ input[type="submit"], button {
 .blue__header {
   display: flex;
   justify-content: space-between;
-  width: var(--width-outer-content);
+  width: var(--width-content);
   max-width: 100%;
   padding: 0 1em;
   margin: auto;
@@ -311,7 +311,7 @@ input[type="submit"], button {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: var(--width-outer-content);
+  width: var(--width-content);
   max-width: 100%;
   padding: 0 1em 0;
   margin: auto;
@@ -559,7 +559,7 @@ input[type="submit"], button {
     flex-wrap: wrap;
     background: var(--color-purple);
     padding-top: 2em;
-    padding-bottom: 40px;
+    padding-bottom: 2.5em;
     position: relative;
   }
   .purple__bg {
@@ -758,13 +758,6 @@ input[type="submit"], button {
   100% {
     counter-reset: second-unit-of-tens 0;
   }
-}
-
-.counter__minute span::before,
-.counter__minute span::after {
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-timing-function: step-end;
 }
 
 .counter__minute span::before {
