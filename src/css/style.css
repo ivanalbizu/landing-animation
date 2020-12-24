@@ -489,7 +489,7 @@ input[type="submit"], button {
   transition: all .4s linear .2s;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 35.938em) {
   .btn-subscribe {
     flex-direction: column;
   }
@@ -537,7 +537,7 @@ input[type="submit"], button {
   transition: all .4s linear .2s;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 35.938em) {
   .btn-register {
     padding-top: .8em;
     padding-bottom: .8em;
@@ -553,7 +553,7 @@ input[type="submit"], button {
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.4));
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
   .purple {
     display: flex;
     flex-wrap: wrap;
@@ -600,7 +600,7 @@ input[type="submit"], button {
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 42.5em) {
   .purple__img img {
     width: 100%;
     border-bottom-width: 20px;
@@ -903,7 +903,7 @@ input[type="submit"], button {
   animation: purple__bg 1.5s ease-in-out 2s forwards;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
   .animate-purple__bg {
     animation-delay: .2s;
   }
@@ -933,7 +933,7 @@ input[type="submit"], button {
   height: calc(100% - 90px);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
   .animate-purple__img {
     animation-delay: .2s;
   }
@@ -966,7 +966,7 @@ input[type="submit"], button {
   animation: purple__txt 1s linear 1s forwards;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
   .animate-purple__txt::after {
     animation-delay: .2s;
   }
@@ -996,7 +996,7 @@ input[type="submit"], button {
   animation: label 1s linear 2s forwards;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
   .animate-label::after {
     animation-delay: 1.2s;
   }
@@ -1027,7 +1027,7 @@ input[type="submit"], button {
   animation: submit .5s linear 2.5s forwards;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
   .animate-submit::after {
     animation-delay: 1.2s;
   }
@@ -1057,7 +1057,7 @@ input[type="submit"], button {
   animation: green__txt 1s linear .5s forwards;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 64em) {
   .animate-green__txt::after {
     animation-delay: .2s;
   }
@@ -1153,7 +1153,7 @@ input[type="submit"], button {
   animation: blue__img-top 1s linear .5s forwards;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 42.5em) {
   .animate-blue__img-top::after {
     left: 0;
   }

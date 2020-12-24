@@ -53,8 +53,13 @@ input[type="submit"], button {
 ::placeholder {
   color: transparent;
 }
+
+$breakpoint-desktop: 64em;
+$breakpoint-tablet: 42.5em;
+$breakpoint-mobile: 35.938em;
+
 :root {
-  --width-content: 86.252em;//+2em padding
+  --width-content: 86.252em;
   --color-purple: #70163C;
   --color-purple-light: #9C2A5A;
   --color-purple-dark: #2E0F15;
@@ -433,7 +438,7 @@ input[type="submit"], button {
     }
   }
 
-  @media (max-width: 575px) {
+  @media (max-width: $breakpoint-mobile) {
     flex-direction: column;
     .label,
     .submit {
@@ -476,7 +481,7 @@ input[type="submit"], button {
     border: 2px solid var(--color-green);
     transition: all .4s linear .2s;
   }
-  @media (max-width: 575px) {
+  @media (max-width: $breakpoint-mobile) {
     padding-top: .8em;
     padding-bottom: .8em;
     width: 100%;
@@ -489,7 +494,7 @@ input[type="submit"], button {
   filter: drop-shadow(0px 0px 8px rgba(0,0,0,.4));
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $breakpoint-desktop) {
   .purple {
     display: flex;
     flex-wrap: wrap;
@@ -540,7 +545,7 @@ input[type="submit"], button {
     }
   }
 }
-@media (max-width: 680px) {
+@media (max-width: $breakpoint-tablet) {
   .purple {
     &__img {
       img {
@@ -786,7 +791,7 @@ input[type="submit"], button {
 .animate-purple__bg {
   clip-path: polygon(0 0%, 100% 0%, 100% 0%, 0% 0%);
   animation: purple__bg 1.5s ease-in-out 2s forwards;
-  @media (max-width: 1024px) {
+  @media (max-width: $breakpoint-desktop) {
     animation-delay: .2s;
   }
 }
@@ -806,7 +811,7 @@ input[type="submit"], button {
     width: 100%;
     height: calc(100% - 90px);
   }
-  @media (max-width: 1024px) {
+  @media (max-width: $breakpoint-desktop) {
     animation-delay: .2s;
   }
 }
@@ -826,7 +831,7 @@ input[type="submit"], button {
     right: 0;
     bottom: 0;
     animation: purple__txt 1s linear 1s forwards;
-    @media (max-width: 1024px) {
+    @media (max-width: $breakpoint-desktop) {
       animation-delay: .2s;
     }
   }
@@ -846,7 +851,7 @@ input[type="submit"], button {
     right: 0;
     bottom: -1px;
     animation: label 1s linear 2s forwards;
-    @media (max-width: 1024px) {
+    @media (max-width: $breakpoint-desktop) {
       animation-delay: 1.2s;
     }
   }
@@ -871,7 +876,7 @@ input[type="submit"], button {
     right: 0;
     bottom: 0;
     animation: submit .5s linear 2.5s forwards;
-    @media (max-width: 1024px) {
+    @media (max-width: $breakpoint-desktop) {
       animation-delay: 1.2s;
     }
   }
@@ -894,7 +899,7 @@ input[type="submit"], button {
     right: 0;
     bottom: 0;
     animation: green__txt 1s linear .5s forwards;
-    @media (max-width: 1024px) {
+    @media (max-width: $breakpoint-desktop) {
       animation-delay: .2s;
     }
   }
@@ -972,7 +977,7 @@ input[type="submit"], button {
   }
   filter: drop-shadow(0px 0px 8px rgba(0,0,0,.4));
   transition: filter .3s linear 1.5s;
-  @media (max-width: 680px) {
+  @media (max-width: $breakpoint-tablet) {
     &::after {
       left: 0;
     }
