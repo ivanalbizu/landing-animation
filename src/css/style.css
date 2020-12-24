@@ -553,7 +553,7 @@ input[type="submit"], button {
   filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0.4));
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
   .purple {
     display: flex;
     flex-wrap: wrap;
@@ -862,7 +862,7 @@ input[type="submit"], button {
 
 .animate-nav-wrapper::after {
   width: 0;
-  animation: nav-wrapper 1s linear forwards;
+  animation: nav-wrapper 1s linear 0s forwards;
 }
 
 @keyframes nav-wrapper {
@@ -903,6 +903,12 @@ input[type="submit"], button {
   animation: purple__bg 1.5s ease-in-out 2s forwards;
 }
 
+@media (max-width: 1024px) {
+  .animate-purple__bg {
+    animation-delay: .2s;
+  }
+}
+
 @keyframes purple__bg {
   0% {
     clip-path: polygon(0 0%, 100% 0%, 100% 0%, 0% 0%);
@@ -927,6 +933,12 @@ input[type="submit"], button {
   height: calc(100% - 90px);
 }
 
+@media (max-width: 1024px) {
+  .animate-purple__img {
+    animation-delay: .2s;
+  }
+}
+
 @keyframes purple__img {
   0% {
     clip-path: polygon(0 0%, 100% 0%, 100% 0%, 0% 0%);
@@ -936,6 +948,36 @@ input[type="submit"], button {
   }
   100% {
     clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+}
+
+.animate-purple__txt {
+  position: relative;
+}
+
+.animate-purple__txt::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-purple);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  animation: purple__txt 1s linear 1s forwards;
+}
+
+@media (max-width: 1024px) {
+  .animate-purple__txt::after {
+    animation-delay: .2s;
+  }
+}
+
+@keyframes purple__txt {
+  0% {
+    clip-path: circle(140.9% at 100% 100%);
+  }
+  100% {
+    clip-path: circle(0% at 100% 100%);
   }
 }
 
@@ -952,6 +994,12 @@ input[type="submit"], button {
   right: 0;
   bottom: -1px;
   animation: label 1s linear 2s forwards;
+}
+
+@media (max-width: 1024px) {
+  .animate-label::after {
+    animation-delay: 1.2s;
+  }
 }
 
 @keyframes label {
@@ -979,36 +1027,18 @@ input[type="submit"], button {
   animation: submit .5s linear 2.5s forwards;
 }
 
+@media (max-width: 1024px) {
+  .animate-submit::after {
+    animation-delay: 1.2s;
+  }
+}
+
 @keyframes submit {
   0% {
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
   }
   100% {
     clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
-  }
-}
-
-.animate-purple__txt {
-  position: relative;
-}
-
-.animate-purple__txt::after {
-  content: "";
-  position: absolute;
-  background-color: var(--color-purple);
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  animation: purple__txt 1s linear 1s forwards;
-}
-
-@keyframes purple__txt {
-  0% {
-    clip-path: circle(140.9% at 100% 100%);
-  }
-  100% {
-    clip-path: circle(0% at 100% 100%);
   }
 }
 
@@ -1025,6 +1055,12 @@ input[type="submit"], button {
   right: 0;
   bottom: 0;
   animation: green__txt 1s linear .5s forwards;
+}
+
+@media (max-width: 1024px) {
+  .animate-green__txt::after {
+    animation-delay: .2s;
+  }
 }
 
 @keyframes green__txt {
@@ -1115,6 +1151,12 @@ input[type="submit"], button {
   right: 0;
   bottom: 0;
   animation: blue__img-top 1s linear .5s forwards;
+}
+
+@media (max-width: 680px) {
+  .animate-blue__img-top::after {
+    left: 0;
+  }
 }
 
 @keyframes blue__img-top {
