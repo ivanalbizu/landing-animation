@@ -2,11 +2,6 @@ He estado haciendo una landing para seguir mejorando la maquetanción con <code>
 
 Que puedes ver en este <a href="https://codepen.io/ivan_albizu/full/bGwoKWg" target="_blank" rel="noopener">https://codepen.io/ivan_albizu/full/bGwoKWg</a>
 
-<iframe height="800" style="width: 100%;" scrolling="no" title="Landing CSS animations" src="https://codepen.io/ivan_albizu/embed/bGwoKWg?height=619&theme-id=2608&default-tab=result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/ivan_albizu/pen/bGwoKWg'>Landing CSS animations</a> by Iván Albizu
-  (<a href='https://codepen.io/ivan_albizu'>@ivan_albizu</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
-
 <ol class="list-bullets">
   <li>Para el primer componente he usado display grid para su versión desktop y flexbox para su versión Mobile</li>
   <li>El segundo componente está todo usando display grid, con ajustes para Mobile y Desktop</li>
