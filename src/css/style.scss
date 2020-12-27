@@ -550,14 +550,13 @@ $breakpoint-mobile: 35.938em;
     &__img {
       img {
         width: 100%;
-        border-bottom-width: 20px;
       }
     }
   }
   .wrapper-blue {
     position: relative;
     &--top {
-      background: linear-gradient(to right, var(--color-blue) calc(50% + 1px), var(--color-mustard) calc(50% + 1px));
+      //background: linear-gradient(to right, var(--color-blue) calc(50% + 1px), var(--color-mustard) calc(50% + 1px));
       &::after {
         left: 0;
       }

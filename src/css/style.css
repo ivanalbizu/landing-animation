@@ -603,13 +603,9 @@ input[type="submit"], button {
 @media (max-width: 42.5em) {
   .purple__img img {
     width: 100%;
-    border-bottom-width: 20px;
   }
   .wrapper-blue {
     position: relative;
-  }
-  .wrapper-blue--top {
-    background: linear-gradient(to right, var(--color-blue) calc(50% + 1px), var(--color-mustard) calc(50% + 1px));
   }
   .wrapper-blue--top::after {
     left: 0;
